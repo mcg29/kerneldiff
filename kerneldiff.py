@@ -23,7 +23,7 @@ if __name__ == "__main__":
 		patchedByte = p[i]
 		if originalByte != patchedByte:
 			diff.append([hex(i),hex(originalByte), hex(patchedByte)])	
-	diffFile = open('kb.patch', 'w+')
+	diffFile = open('kc.bpatch', 'w+')
 	diffFile.write('#AMFI\n\n')
 	for d in diff:
 		data = str(d[0]) + " " + (str(d[1])) + " " + (str(d[2]))
